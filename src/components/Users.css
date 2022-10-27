@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: 120px 300px;
+  grid-template-rows: repeat(4, 100px);
+  width: 600px;
+  margin-top: 50px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.kapsayici {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  height: 40px;
+}
+
+img.usersPhoto {
+  height: 100px;
+  width: 100px;
+
+  border-radius: 50%;
+}
