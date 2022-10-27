@@ -17,21 +17,21 @@ const Users = () => {
   return (
     <div className="">
       {dataa.map((eleman) => {
-        const { id, name, email, phone, location } = eleman;
+        const { id, name, email, phone, location, picture, registered, dob } =
+          eleman;
         const { title, first, last } = name;
         const { city, country } = location;
+        const { medium } = picture;
         console.log(eleman);
         return (
           <div className="container bg-warning text-center" key={id}>
             <div className="kapsayici baslik">
-              <img
-                src="https://cdn.pixabay.com/photo/2016/11/18/19/13/buildings-1836478_1280.jpg"
-                alt=""
-                className="usersPhoto"
-              />
+              <img src={medium} alt="" className="usersPhoto" />
             </div>
             <div className="kapsayici names">
-              {title} {first} {last}
+              <h5>
+                {title} {first} {last}
+              </h5>
             </div>
             <div className="kapsayici mail">
               <img src={emailImage} alt="" />
@@ -46,6 +46,11 @@ const Users = () => {
             </div>
             <div className="kapsayici">
               {city} {country}{" "}
+            </div>
+
+            <div className="footer text-center">
+              <p>Age : {dob.age} </p>
+              <p>Register Date : {registered.date}</p>
             </div>
           </div>
         );
