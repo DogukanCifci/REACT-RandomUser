@@ -53,3 +53,8 @@ img.usersPhoto {
   transform: scale(1.3);
   transition: transform 1s;
 }
+
+.warning{
+  font-size:52px;
+  color: red !important!;
+}
