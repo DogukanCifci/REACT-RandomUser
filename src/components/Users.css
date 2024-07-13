@@ -54,7 +54,23 @@ img.usersPhoto {
   transition: transform 1s;
 }
 
-.warning{
+.warning {
+  background-color: #ffcccc; /* Arka plan rengi */
   font-size:52px;
-  color: red !important!;
+  color: #cc0000; /* Metin rengi */
+  border: 1px solid #cc0000; /* Kenarlık rengi ve kalınlığı */
+  padding: 10px; /* İçeriği kenardan ayırma */
+  width: 300px; /* Div genişliği */
+  margin: 0 auto; /* Sayfanın ortasında hizalama */
+  text-align: center; /* Metni ortala */
+  animation: blink 1s infinite; /* Yanıp sönen animasyon */
+}
+
+@keyframes blink {
+  0%, 49.9% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
 }
