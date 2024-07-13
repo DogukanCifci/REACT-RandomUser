@@ -19,6 +19,9 @@ const Users = () => {
   };
   return (
     <div>
+      <div class="warning">
+  <p>Bu bir uyarı mesajıdır!</p>
+</div>
      <div>WARNING!!!!</div>
       <div class="warning">Kisilel Bilgileriniz ve Adresiniz ele gecirilmistir!!</div>
       <div>Tarayiciyi kapat!</div>
